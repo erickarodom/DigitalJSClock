@@ -1,4 +1,39 @@
 body{
-    background-color: pink;
-    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: orangered;
 }
+
+h1{
+    font-size: 4em;
+    text-align: center;
+    color: #ffff;
+}
+
+.clock-body,.clock,.date{
+    text-align: center;
+    color: white;
+}
+
+.clock-body{
+    background-color: rgba(183, 182, 182, 0.279);
+    padding: 2em 5em;
+    border-radius: 10px;
+    box-shadow: #6a5c5c85 -1px 1px 8px;
+}
+.clock,.date{
+    padding-bottom: 15px;
+    font-weight: 700;
+}
+
+.clock{
+    font-size: 3em;
+}
+.date{
+    font-size: 2em;
+}
+
