@@ -1,22 +1,3 @@
-// let currentDayTime = new Date(); 
-// let toDay = currentDayTime.getDay();
-// let month = currentDayTime.getMonth();
-// let year = currentDayTime.getFullYear();
-// let months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
-// let days = ["Sunday", "Monday", "Tuesday", "Wednesday","Thursday", "Friday","Saturday"];
-
-
-// days.forEach((day,index)=>{
-//     if(index == toDay){
-//         console.log(day); 
-//         }
-       
-//       }
-//   );
-
-
-// document.getElementById("date").innerHTML = toDay + ', ' +  months[month] + 
-// ' ' + year;
 
 function currentTime() {
     let date = new Date(); 
@@ -41,6 +22,34 @@ function currentTime() {
      let time = `${hh} : ${mm} : ${ss} : ${session}`;
   
     document.getElementById("clock").innerText = time; 
-    let t = setTimeout(function(){ currentTime() }, 1000);
+    setTimeout(function(){ currentTime() }, 1000);
   }
+
   currentTime();
+
+function currentDay() {
+    let currentDayTime = new Date();
+    let todaysDate = currentDayTime.getDate(); 
+    let toDay = currentDayTime.getDay();
+    let month = currentDayTime.getMonth();
+    let year = currentDayTime.getFullYear();
+    let months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+    let days = ["Sunday", "Monday", "Tuesday", "Wednesday","Thursday", "Friday","Saturday"];
+    let thisday = " ";
+    
+    days.forEach((day,index)=>{
+        if(index == toDay){
+            return thisday += day; 
+            }
+    
+          }
+      );
+
+    document.getElementById("date").innerHTML =
+      thisday + ", "+  months[month] +
+        "  " + todaysDate + "  " + year;
+}
+
+
+
+  currentDay();
