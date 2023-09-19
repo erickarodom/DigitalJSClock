@@ -1,33 +1,45 @@
 
+// function definition to display time.
+
 function currentTime() {
+  //fuction variables 
     let date = new Date(); 
-    let hh = date.getHours();
-    let mm = date.getMinutes();
-    let ss = date.getSeconds();
-    let session = "AM";
-  
-    if(hh == 0){
-        hh = 12;
+    let hours = date.getHours();
+    let minutes = date.getMinutes();
+    let seconds = date.getSeconds();
+    let dayOrNight= "AM";
+
+  //conditional logic to determine between AM/PM
+    if(hours == 0){
+        hours += 12;
+        dayOrNight = "AM";
     }
-    if(hh > 12){
-        hh = hh - 12;
-        session = "PM";
+
+    if(hours > 12){
+        hours -= 12;
+        dayOrNight = "PM";
      }
   
-     hh = (hh < 10) ? "0" + hh : hh;
-     mm = (mm < 10) ? "0" + mm : mm;
-     ss = (ss < 10) ? "0" + ss : ss;
+     hours = (hours < 10) ? "0" + hours : hours;
+     minutes = (minutes < 10) ? "0" + minutes : minutes;
+     seconds = (seconds < 10) ? "0" + seconds : seconds;
       
-    //  let time = hh + ":" + mm + ":" + ss + " " + session;
-     let time = `${hh} : ${mm} : ${ss} : ${session}`;
+  //variable to be used to render time
+     let time = `${hours} : ${minutes} : ${seconds} : ${dayOrNight}`;
   
     document.getElementById("clock").innerText = time; 
+
+  //this line of code will cause the function to repeat every 1 sec once called.   
     setTimeout(function(){ currentTime() }, 1000);
   }
-
+  
   currentTime();
 
+
+//function definition to display day of week and date.
+
 function currentDay() {
+  //function variables
     let currentDayTime = new Date();
     let todaysDate = currentDayTime.getDate(); 
     let toDay = currentDayTime.getDay();
@@ -37,11 +49,12 @@ function currentDay() {
     let days = ["Sunday", "Monday", "Tuesday", "Wednesday","Thursday", "Friday","Saturday"];
     let thisday = " ";
     
+  //use of forEach method to iterate over the array and compare the index to each element index.
+  
     days.forEach((day,index)=>{
         if(index == toDay){
             return thisday += day; 
             }
-    
           }
       );
 
@@ -49,7 +62,4 @@ function currentDay() {
       thisday + ", "+  months[month] +
         "  " + todaysDate + "  " + year;
 }
-
-
-
   currentDay();
