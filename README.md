@@ -22,9 +22,19 @@ Here is an example of a working [clock](https://software-development-mastermind.
 4. Clock should show current date in format Day, Month Date Year (eg. Monday, August 12th 2021)
 5. Application is publicly available on GitHub [pages]
 
+## License
+Distributed under the MIT License.
+
+## Contact
+[![LinkedIn][linkedin-shield]][linkedin-url]   or  Email me: <a href="mailto:ericka.r.odom@gmail.com">📧</a>
+
+
+
 [//]: # (Just testing writing comments?)
 
 [pages]: <https://pages.github.com>
+[linkedin-shield]: <https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555>
+[linkedin-url]: https://linkedin.com/in/ericka-odom
 
   
    
