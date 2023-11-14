@@ -1,4 +1,4 @@
-This is Project One for SDMM - Rock,Paper,Scissors
+This is Project One for SDMM - JS Clock
 ============================
 ### About
 ![Static Badge](https://img.shields.io/badge/Remember-have_fun-blue)
