@@ -21,6 +21,7 @@ Here is an example of a working [clock](https://software-development-mastermind.
 3. Clock should show current time for hours, minutes and seconds with leading zeros.  For example, if it should say 04:04:09 instead of 4:4:9.
 4. Clock should show current date in format Day, Month Date Year (eg. Monday, August 12th 2021)
 5. Application is publicly available on GitHub [pages]
+6. [My Live Application](https://erickarodom.github.io/project-two/)
 
 ## License
 Distributed under the MIT License.
