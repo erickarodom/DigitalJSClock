@@ -1,4 +1,4 @@
-This is Project One for SDMM
+This is Project One for SDMM - Rock,Paper,Scissors
 ============================
 ### About
 ![Static Badge](https://img.shields.io/badge/Remember-have_fun-blue)
